@@ -1,0 +1,91 @@
+@fade-duration: 2s;
+@slide-duration: 1.5s;
+@fall-duration: 0.5s;
+@ease-out: ease-out;
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fillProgress {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes fallIn {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.fadeIn() {
+    animation: fadeIn @fade-duration @ease-out;
+}
+
+.slideInFromLeft() {
+    animation: slideInFromLeft @slide-duration @ease-out;
+}
+
+.slideInFromRight() {
+    animation: slideInFromRight @slide-duration @ease-out;
+}
+
+.fillProgress() {
+    animation: fillProgress 1.5s @ease-out forwards;
+}
+
+.fallIn(@delay) {
+    animation: fallIn @fall-duration @ease-out forwards;
+    animation-delay: @delay;
+}
+
+.header-content {
+    .fadeIn();
+}
+
+.about, .projects, .contact {
+    .fadeIn();
+}
+
+.profile-picture {
+    .slideInFromLeft();
+}
+
+.header-text {
+    .slideInFromRight();
+}
+
+.skills .skill-item {
+    .fillProgress();
+}
+
+.skills .skill-item span {
+    display: inline-block;
+    &:nth-child(1) { .fallIn(0.1s); }
+    &:nth-child(2) { .fallIn(0.2s); }
+    &:nth-child(3) { .fallIn(0.3s); }
+    &:nth-child(4) { .fallIn(0.4s); }
+    &:nth-child(5) { .fallIn(0.5s); }
+    &:nth-child(6) { .fallIn(0.6s); }
+    &:nth-child(7) { .fallIn(0.7s); }
+    &:nth-child(8) { .fallIn(0.8s); }
+    &:nth-child(9) { .fallIn(0.9s); }
+    &:nth-child(10) { .fallIn(1s); }
+}
+
+.skills .skill-item:nth-child(1) { animation-delay: 0.2s; }
+.skills .skill-item:nth-child(2) { animation-delay: 0.4s; }
+.skills .skill-item:nth-child(3) { animation-delay: 0.6s; }
+.skills .skill-item:nth-child(4) { animation-delay: 0.8s; }
+.skills .skill-item:nth-child(5) { animation-delay: 1s; }
+.skills .skill-item:nth-child(6) { animation-delay: 1.2s; }

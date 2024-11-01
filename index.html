@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayd Rodriguez Portfolio</title>
+    <link rel="stylesheet" href="/less/styles.less">
+    <link rel="stylesheet" href="/less/animaciones.less">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="/public/js/idioma.js"></script>
+    <script src="/public/js/animacion.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-picture">
+                    <img src="/public/imagenes/imgperfil.jpg" alt="Sayd Rodriguez">
+                </div>
+                <div class="header-text">
+                    <h1 data-translate="mainTitle"></h1>
+                    <h2 data-translate="subTitle"></h2>
+                    <p data-translate="description"></p>
+                </div>
+            </div>
+        </div>
+        <button id="languageButton" onclick="changeLanguage()">Español</button>
+    </header>
+    <section class="about">
+        <div class="container">
+            <h2 data-translate="aboutTitle">PERSONAL INFOS</h2>
+            <ul>
+                <li data-translate="firstName"></li>
+                <li data-translate="age"></li>
+                <li data-translate="phone"></li>
+                <li data-translate="lastName"></li>
+                <li data-translate="nationality"></li>
+                <li data-translate="address"></li>
+                <li data-translate="email"></li>
+                <li data-translate="languages"></li>
+                <li data-translate="hobbies"></li>
+            </ul>
+            <button data-translate="btncurriculum">DOWNLOAD CV</button>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2 data-translate="skills">Sobre lo que sé</h2>
+            <div class="skill-list">
+                <div class="skill-item" data-color="#E34F26">
+                    <span>H</span><span>T</span><span>M</span><span>L</span>
+                </div>
+                <div class="skill-item" data-color="#2965F1">
+                    <span>C</span><span>S</span><span>S</span>
+                </div>
+                <div class="skill-item" data-color="#178600">
+                    <span>C</span><span>#</span>
+                </div>
+                <div class="skill-item" data-color="#7F52FF"> 
+                    <span>K</span><span>O</span><span>T</span><span>L</span><span>I</span><span>N</span>
+                </div>
+                <div class="skill-item" data-color="#5382A1"> 
+                    <span>J</span><span>A</span><span>V</span><span>A</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="skills">
+        <div class="container">
+            <h2 data-translate="skills2">Estudy On</h2>
+            <div class="skill-list">
+                <div class="skill-item" data-color="#F0DB4F"> 
+                    <span>J</span><span>A</span><span>V</span><span>A</span><span>S</span><span>C</span><span>R</span><span>I</span><span>P</span><span>T</span>
+                </div>
+                <div class="skill-item" data-color="#83CD29"> 
+                    <span>N</span><span>O</span><span>D</span><span>E</span>
+                </div>
+                <div class="skill-item" data-color="#E0234E"> 
+                    <span>N</span><span>E</span><span>S</span><span>T</span>
+                </div>
+                <div class="skill-item" data-color="#DD0031"> 
+                    <span>A</span><span>N</span><span>G</span><span>U</span><span>L</span><span>A</span><span>R</span>
+                </div>
+                <div class="skill-item" data-color="#5382A1"> 
+                    <span>J</span><span>A</span><span>V</span><span>A</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2 data-translate="projectsTitle">MY PROJECTS</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="/public/imagenes/a-photo-of-a-user-manual-with-the-text-manual-de-u-Hr4mBeYzT-mq-9CEF71x_A-GeoUczuKS_StIAzPwM3nbQ.jpeg" alt="Manualfincasa">
+                    <h3>Manual de usuario de cabañas Fincasa</h3>
+                    <a href="https://manualfincasa.netlify.app/" class="btn" data-translate="viewProject">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="/public/imagenes/OIG2 (1).jpeg" alt="AppTodo-img">
+                    <h3>App Todo JS</h3>
+                    <a href="https://todoapp-sayd.netlify.app/#/active" class="btn" data-translate="viewProject">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="/public/imagenes/OIG3.jpeg" alt="Black Jack JS">
+                    <h3>Black Jack JS</h3>
+                    <a href="https://sayd-game-blackjack.netlify.app/" class="btn" data-translate="viewProject">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 data-translate="contactTitle">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <div class="contact-info-column">
+                    <div class="contact-info">
+                        <h3 data-translate="shyTitle"></h3>
+                        <p data-translate="shyDescription"></p>
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p data-translate="addressTitle"></p>
+                                <p data-translate="addressDescription"></p>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <p data-translate="mailTitle"></p>
+                                <p data-translate="mailDescription"></p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <p data-translate="phoneTitle"></p>
+                                <p data-translate="phoneDescription"></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form-column">
+                    <div class="contact-form">
+                        <input type="text" data-translate="contactName" placeholder="YOUR NAME" required>
+                        <input type="email" data-translate="contactEmail" placeholder="YOUR EMAIL" required>
+                        <textarea data-translate="contactMessage" placeholder="YOUR MESSAGE" required></textarea>
+                        <button data-translate="contactButton">SEND MESSAGE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h4 data-translate="socialLinksTitle">CONNECT WITH ME</h4>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sayd-josue-9aa544328/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/sayd_r.m/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://github.com/SjRodri" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>                
+            </div>
+            <p class="copyright">&copy; 2024 Sayd Rodriguez. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
